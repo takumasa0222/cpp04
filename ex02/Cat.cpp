@@ -9,6 +9,7 @@ Cat::Cat() : brain_(new Brain()){
 
 Cat::~Cat() {
     std::cout << "Cat Destructor called" << std::endl;
+    delete brain_;
 }
 
 Cat::Cat(const Cat& source) : AbstructAnimal(source) {
