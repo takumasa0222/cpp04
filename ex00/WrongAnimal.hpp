@@ -1,5 +1,5 @@
+#pragma once
 #include <string>
-
 class WrongAnimal {
 public:
     WrongAnimal();
@@ -12,11 +12,3 @@ protected:
     std::string type;
 };
 
-class WrongCat : public WrongAnimal {
-public:
-    WrongCat();
-    ~WrongCat();
-    WrongCat(const WrongCat& source);
-    WrongCat& operator=(const WrongCat& source);
-    virtual void makeSound() const;
-};

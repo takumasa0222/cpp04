@@ -1,6 +1,7 @@
 #include "Animal.hpp"
 #include <iostream>
-
+#include "Dog.hpp"
+#include "Cat.hpp"
 
 void runDeepCopyTest() {
     Dog dog1;

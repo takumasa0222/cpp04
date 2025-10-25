@@ -1,4 +1,4 @@
-#include "WrongAnimal.hpp"
+#include "WrongCat.hpp"
 #include <iostream>
 
 WrongCat::WrongCat() {

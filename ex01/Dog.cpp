@@ -1,4 +1,4 @@
-#include "Animal.hpp"
+#include "Dog.hpp"
 #include <iostream>
 
 Dog::Dog() : brain_(new Brain()) {
@@ -8,6 +8,7 @@ Dog::Dog() : brain_(new Brain()) {
 
 Dog::~Dog() {
     std::cout << "Dog Destructor called" << std::endl;
+    delete brain_;
 }
 
 Dog::Dog(const Dog& source) : Animal(source) {

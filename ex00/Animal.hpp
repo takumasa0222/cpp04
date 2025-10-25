@@ -1,3 +1,4 @@
+#pragma once
 #include <string>
 
 class Animal {
@@ -11,23 +12,4 @@ public:
 protected:
     std::string type;
 };
-
-class Dog : public Animal {
-public:
-    Dog();
-    ~Dog();
-    Dog(const Dog& source);
-    Dog& operator=(const Dog& source);
-    virtual void makeSound() const;
-private:
     
-};
-
-class Cat : public Animal {
-public:
-    Cat();
-    ~Cat();
-    Cat(const Cat& source);
-    Cat& operator=(const Cat& source);
-    virtual void makeSound() const;
-};

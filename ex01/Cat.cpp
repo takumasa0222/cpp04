@@ -1,4 +1,4 @@
-#include "Animal.hpp"
+#include "Cat.hpp"
 #include <iostream>
 
 Cat::Cat() : brain_(new Brain()){
@@ -8,6 +8,7 @@ Cat::Cat() : brain_(new Brain()){
 
 Cat::~Cat() {
     std::cout << "Cat Destructor called" << std::endl;
+    delete brain_;
 }
 
 Cat::Cat(const Cat& source) : Animal(source) {
