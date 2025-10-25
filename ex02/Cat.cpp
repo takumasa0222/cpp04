@@ -1,5 +1,6 @@
-#include "AbstrustAnimal.hpp"
+#include "AbstructAnimal.hpp"
 #include <iostream>
+#include "Cat.hpp"
 
 Cat::Cat() : brain_(new Brain()){
     std::cout << "Cat constructor called" << std::endl;
@@ -10,7 +11,7 @@ Cat::~Cat() {
     std::cout << "Cat Destructor called" << std::endl;
 }
 
-Cat::Cat(const Cat& source) : AbstrustAnimal(source) {
+Cat::Cat(const Cat& source) : AbstructAnimal(source) {
     std::cout << "Cat Copy constructor called" << std::endl;
     if (this == &source)
         return ;
@@ -22,7 +23,7 @@ Cat& Cat::operator=(const Cat& source) {
     std::cout << "Cat Copy assign operator called" << std::endl;
     if (this == &source)
         return *this;
-    AbstrustAnimal::operator=(source);
+    AbstructAnimal::operator=(source);
     delete brain_;
     brain_ = new Brain(*source.brain_);
     return *this;

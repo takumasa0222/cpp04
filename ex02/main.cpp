@@ -1,5 +1,7 @@
-#include "Animal.hpp"
+#include "AbstructAnimal.hpp"
 #include <iostream>
+#include "Cat.hpp"
+#include "Dog.hpp"
 
 
 void runDeepCopyTest() {
@@ -20,9 +22,9 @@ void runDeepCopyTest() {
 
 int main() {
     std::cout << "\n=== Animal Test ===" << std::endl;
-    const Animal* animals[100];
-    for (int i = 0;  i < 100; i++) {
-        if (i < 50)
+    const AbstructAnimal* animals[10];
+    for (int i = 0;  i < 10; i++) {
+        if (i < 5)
             animals[i] = new Dog();
         else 
             animals[i] = new Cat();
@@ -30,7 +32,7 @@ int main() {
     std::cout << "\n=== Deepcopy Test ===" << std::endl;
     runDeepCopyTest();
     std::cout << "\n=== Destructor ===" << std::endl;
-    for (int i = 0;  i < 100; i++) {
+    for (int i = 0;  i < 10; i++) {
         delete animals[i];
     }
 

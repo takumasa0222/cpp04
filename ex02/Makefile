@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: tamatsuu <tamatsuu@student.42tokyo.jp>     +#+  +:+       +#+         #
+#    By: tamatsuu <tamatsuu@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/27 00:43:14 by tamatsuu          #+#    #+#              #
-#    Updated: 2025/10/25 14:30:42 by tamatsuu         ###   ########.fr        #
+#    Updated: 2025/10/25 15:49:14 by tamatsuu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ CC = c++
 INCLUDES = -I ./
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 SRCS    =   main.cpp \
-			AbstrustAnimal.cpp \
+			AbstructAnimal.cpp \
 			Cat.cpp \
 			Dog.cpp \
 			Brain.cpp

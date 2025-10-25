@@ -1,5 +1,7 @@
-#include "AbstrustAnimal.hpp"
+#include "AbstructAnimal.hpp"
 #include <iostream>
+#include "Dog.hpp"
+
 
 Dog::Dog() : brain_(new Brain()) {
     std::cout << "Dog constructor called" << std::endl;
@@ -10,7 +12,7 @@ Dog::~Dog() {
     std::cout << "Dog Destructor called" << std::endl;
 }
 
-Dog::Dog(const Dog& source) : AbstrustAnimal(source) {
+Dog::Dog(const Dog& source) : AbstructAnimal(source) {
     std::cout << "Dog Copy constructor called" << std::endl;
     if (this == &source)
         return ;
@@ -22,7 +24,7 @@ Dog& Dog::operator=(const Dog& source) {
     std::cout << "Dog Copy assign operator called" << std::endl;
     if (this == &source)
         return *this;
-    AbstrustAnimal::operator=(source);
+    AbstructAnimal::operator=(source);
     delete brain_;
     brain_ = new Brain(*source.brain_);
     return *this;
